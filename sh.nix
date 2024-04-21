@@ -21,7 +21,7 @@ let
 
   programs.zsh = {
     enable = true;
-    # Nearly all configs found online had lowercase "A"utosu..., only works for me with uppercase
+    # Nearly all configs found online had Autosuggestions.enable which does not work for me
     enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
     enableCompletion = true;
