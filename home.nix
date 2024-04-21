@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 {
   imports = [
-  ./sh.nix
+  ./user/shell/sh.nix
+  ./user/shell/starship.nix
   ./user/apps/alacritty.nix
-  ./starship.nix
-];
+  ];
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
