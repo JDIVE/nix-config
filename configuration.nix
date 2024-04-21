@@ -5,7 +5,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # Include NVIDIA configurations
-      ./nvidia.nix
+      ./system/hardware/graphics/nvidia.nix
     ];
 
   # Bootloader.
