@@ -26,6 +26,11 @@ let
     syntaxHighlighting.enable = true;
     enableCompletion = true;
     shellAliases = myAliases;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" ];
+      theme = "robbyrussell";
+  };
   };
 
 }
