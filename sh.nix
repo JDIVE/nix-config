@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ pkgs, ...}:
 let
   myAliases = {
     ll = "ls -l";
@@ -15,11 +15,16 @@ let
 {
   programs.bash = {
     enable = true;
+    enableCompletion = true;
     shellAliases = myAliases;
   };
 
   programs.zsh = {
     enable = true;
+    # Nearly all configs found online had lowercase "A"utosu..., only works for me with uppercase
+    enableAutosuggestions = true;
+    syntaxHighlighting.enable = true;
+    enableCompletion = true;
     shellAliases = myAliases;
   };
 
