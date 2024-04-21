@@ -12,6 +12,7 @@
           x = 20;
           y = 20;
         };
+        opacity = 0.8;
       };
 
       live_config_reload = true;
